@@ -1,0 +1,18 @@
+{
+  "bugs": [
+    {
+      "desc": "View Todo Items as Bullet points",
+      "score": 5
+    }
+  ],
+  "features": [
+    {
+      "desc": "The font size of title of the app should be 40px",
+      "score": 20
+    },
+    {
+      "desc": "Can add an item to the todo list",
+      "score": 15
+    }
+  ]
+}

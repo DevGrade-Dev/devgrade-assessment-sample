@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Installing Project dependencies
+      - npm install --silent
+      - echo Finished Installing Project dependencies
+  pre_build:
+    commands:
+      - echo Testing Project
+      - echo $CODE_COMMIT_REPO
+      - jest --json > results.json || echo $CODE_COMMIT_REPO > ./config/repo.txt
+      - cd config && node result.js
+      - echo Finished Testing Project
+  build:
+    commands:
+      - cd config && node result.js
+      - echo Finished Testing Project
+      - echo Building Project
+      - echo Finished Building
+
+cache:
+  paths:
+    - "node_modules/**/*"

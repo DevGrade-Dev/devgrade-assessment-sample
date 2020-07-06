@@ -1,0 +1,25 @@
+{
+  "name": "devgrade-assessment-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevGrade-Dev/devgrade-assessment-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevGrade-Dev/devgrade-assessment-sample/issues"
+  },
+  "homepage": "https://github.com/DevGrade-Dev/devgrade-assessment-sample#readme",
+  "dependencies": {
+    "jest": "^26.1.0"
+  }
+}
